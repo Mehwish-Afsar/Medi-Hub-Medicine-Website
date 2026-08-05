@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — MediHub</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar wrap" style="padding:16px 24px;">
+    <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true"></span>MediHub</a>
+    <div class="nav-actions" style="margin-left:auto;">
+      <span style="font-size:13.5px; color:var(--muted);">New here?</span>
+      <a href="sign-up.html" class="btn btn-ghost btn-sm">Create account</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="auth-shell">
+    <div class="wrap">
+      <div class="auth-grid">
+        <div class="auth-side">
+          <div>
+            <span class="eyebrow">Welcome back</span>
+            <h2>Pick up right where you left off.</h2>
+            <p>Sign in to track orders, reorder your usuals, and manage your prescriptions.</p>
+          </div>
+          <p class="quote">"Same-day delivery, real pharmacists, and my usual refill in two taps."</p>
+        </div>
+
+        <div class="auth-form-wrap">
+          <h1>Sign in</h1>
+          <p>Enter your details to access your account.</p>
+
+          <form data-signin-form novalidate>
+            <div class="field">
+              <label for="si-email">Email address</label>
+              <input id="si-email" name="email" type="email" placeholder="you@example.com" required>
+              <p class="field-msg"></p>
+            </div>
+
+            <div class="field">
+              <label for="si-password">Password</label>
+              <div class="input-wrap">
+                <input id="si-password" name="password" type="password" placeholder="Your password" required>
+                <button type="button" class="pw-toggle" data-pw-toggle="#si-password" aria-label="Show password">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+              <p class="field-msg"></p>
+            </div>
+
+            <div class="check-row" style="justify-content:space-between; align-items:center;">
+              <label style="display:flex; align-items:center; gap:8px; margin:0;">
+                <input type="checkbox" name="remember"> Remember me
+              </label>
+              <a href="#" style="color:var(--primary); font-weight:600; font-size:13.5px;">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+          </form>
+
+          <p class="auth-foot">Don't have an account? <a href="sign-up.html">Create one free</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>

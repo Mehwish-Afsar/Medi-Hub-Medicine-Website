@@ -1,447 +1,162 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Medicines</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<style type="text/css">
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.style1 {font-family: Arial, Helvetica, sans-serif}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — MediHub</title>
+  <meta name="description" content="Browse medicines, baby care and nutrition products at MediHub.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark px-0">
-<img src="images/logo.png" alt="logo"> &nbsp;<h2 class="text-light">Medi HUB&nbsp&nbsp&nbsp </h2></br>
-<ul class="navbar-nav">
-<li class="nav-item"><a href="medi_hub.html" class="nav-link">Home</a></li>
-<li class="nav-item"><a href="medicine.html" class="nav-link">Products and medicines</a></li>
-<li class="nav-item"><a href="about_us.html" class="nav-link">About Us</a></li>
-<li class="nav-item"><a href="contact_us.html" class="nav-link">Contact Us</a></li>
-<li class="nav-item"><a href="faqs.html" class="nav-link">FAQs</a></li> 
-<li class="nav-item"><a href="#" class="nav-link"><input type="text" size="30" placeholder="Search" ></a></li> 
-<li class="nav-item"><a href="Sign_in.html" class="nav-link" target="_blank">Login</a></li>
-<li class="nav-item"><a href="Sign_up.html" class="nav-link" target="_blank">Create Account</a></li>
-</ul></nav>
 
+  <header class="site-header">
+    <div class="nav-strip">
+      <div class="wrap">
+        <span>Call / WhatsApp 03-111-62-63-64 · Same-day delivery in Karachi</span>
+        <a href="sign-in.html">Track an order →</a>
+      </div>
+    </div>
+    <div class="navbar wrap">
+      <a href="index.html" class="brand"><span class="brand-mark" aria-hidden="true"></span>MediHub</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="medicine.html" aria-current="page">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faqs.html">FAQs</a>
+      </nav>
+      <form class="nav-search" role="search" onsubmit="return false;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M21 21l-4.3-4.3" />
+        </svg>
+        <input type="search" placeholder="Search medicines, baby care…" aria-label="Search products">
+      </form>
+      <div class="nav-actions">
+        <a href="sign-in.html" class="icon-btn" aria-label="Account">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21a8 8 0 0 0-16 0" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </a>
+        <a href="#shop" class="icon-btn" aria-label="Cart">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+          </svg>
+          <span class="cart-count" data-cart-count style="display:none">0</span>
+        </a>
+        <a href="sign-up.html" class="btn btn-amber btn-sm">Create account</a>
+        <button class="icon-btn nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+      <a href="index.html">Home</a>
+      <a href="medicine.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="sign-in.html">Login</a>
+      <a href="sign-up.html">Create account</a>
+    </div>
+  </header>
 
-<div class="container-fluid mt-3 px-0 text-center">
-<h1 class="text-center bg-dark text-light">Baby products</h1>
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Baby wipes  (80).jpeg" title="Baby wipes(80)">
-<h3>Baby wipes(80)</h3>
-<button> Rs.728</button>
-<button> Add to cart</button>
-</div>
+  <main>
+    <section style="padding-bottom:0;">
+      <div class="wrap">
+        <span class="eyebrow">Full catalogue</span>
+        <h1 style="font-size:clamp(28px,4vw,42px); max-width:20ch;">Products &amp; medicines</h1>
+        <p style="max-width:56ch;">Search across every item in stock, or filter by category. Items marked
+          <strong>Rx</strong> require a prescription at checkout.
+        </p>
+      </div>
+    </section>
 
-<div class="col-4 text-center">
-<img src="images/Pamper newborn baby.jpeg" title="Pamper">
-<h3>Momse Diapers </h3>
-<button>Rs. 1420 </button>
-<button> Add to cart</button>
- </div>
- 
-<div class="col-4 text-center">
-<img src="images/Pampers.jpeg" title="Pampers">
-<h3>Pampers Pants </h3>
-<button>Rs. 2299 </button>
-<button> Add to cart</button>
-<button> Buy now</button>
-</div>  
-</div>
-<br />
-<br /> 
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Johnsons Baby Blossom Soap.jpeg" title="Soap">
-<h3>Johnsons Baby Blossom Soap 100gm</h3>
-<button>Rs. 255 </button>
-<button> Add to cart</button>
-</div>
+    <section id="shop">
+      <div class="wrap">
+        <div class="filter-bar">
+          <button class="chip" data-filter="all" aria-pressed="true">All products</button>
+          <button class="chip" data-filter="medicine" aria-pressed="false">Medicine</button>
+          <button class="chip" data-filter="baby" aria-pressed="false">Baby care</button>
+          <button class="chip" data-filter="nutrition" aria-pressed="false">Nutrition &amp; supplements</button>
+          <div class="shop-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+            <input type="search" placeholder="Search by name…" data-shop-search aria-label="Search products">
+          </div>
+        </div>
+        <p class="result-count" data-result-count></p>
+        <div class="product-grid" data-product-grid></div>
+      </div>
+    </section>
+  </main>
 
-<div class="col-4 text-center">
-<img src="images/Johnsons Baby Soft Lotion.png" title="Soap">
-<h3>Johnsons Baby Soft Lotion</h3>
-<button>Rs. 250 </button>
-<button> Add to cart</button>
- </div>
- 
-<div class="col-4 text-center">
-<img src="images/Johnson's Baby Oil 100 ml.jpeg" title="Baby Oil">
-<h3>Johnson's Baby Oil 100ml</h3>
-<button> Rs. 468 </button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span class="brand-mark" aria-hidden="true"></span>MediHub</div>
+          <p style="opacity:.75; font-size:14px; max-width:32ch;">Pakistan's online pharmacy for medicine, baby care and
+            nutrition — delivered with a proper cold chain.</p>
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M13 22v-9h3l.5-4H13V6.5c0-1.2.3-2 2-2h2V1.1C16.6 1 15.4 1 14 1c-3 0-5 1.8-5 5.2V9H6v4h3v9h4Z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg></a>
+            <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Shop</h5>
+          <ul>
+            <li><a href="medicine.html">Medicines</a></li>
+            <li><a href="medicine.html">Baby care</a></li>
+            <li><a href="medicine.html">Nutrition</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li>03-111-62-63-64</li>
+            <li>support@medihub.pk</li>
+            <li>Karachi, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2023 Medi Hub. All rights reserved.</span>
+        <span>Built for a modernized MediHub project</span>
+      </div>
+    </div>
+  </footer>
 
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Johnson's Baby Powder.jpeg" title="Baby Powder">
-<h3>Johnson's Baby Powder 100g</h3>
-<button> Rs. 272 </button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/Johnson Baby Gift Box.png" title="Baby Gift Box">
-<h3>Johnson Baby Gift Box</h3>
-<button> Rs. 3000 </button>
-<button> Add to cart</button>
- </div>
- 
-<div class="col-4 text-center">
-<img src="images/Lactogen(1) 200 grams.jpeg" title="Lactogen">
-<h3>Lactogen(1) 200 grams</h3>
-<button> Rs. 504 </button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Lactogen 2  200 Grams.jpeg" title="Lactogen 2">
-<h3>Lactogen 2  200 Grams</h3>
-<button> Rs. 500 </button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/Lactogrow 3  200 Grams.png" title="Lactogrow 3">
-<h3>Lactogrow 3  200 Grams</h3>
-<button> Rs. 500 </button>
-<button> Add to cart</button>
- </div>
- 
-<div class="col-4 text-center">
-<img src="images/Lactogen Recover 200 Grams.png" title="Lactogen Recover">
-<h3>Lactogen Recover 200 Grams</h3>
-<button> Rs. 713 </button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Nestle Bunyad 260 grams.jpeg" title="Powdered milk">
-<h3>Bunyad 260 Grams</h3>
-<button> Rs. 2550 </button>
-<button> Add to cart</button></div>
-
-<div class="col-4 text-center">
-<img src="images/Nestle Cerelac 175 grams.jpeg" title="Cerelac">
-<h3>Nestle Cerelac 175 grams</h3>
-<button> Rs. 340 </button>
-<button> Add to cart</button> </div>
- 
-<div class="col-4 text-center">
-<img src="images/Nestle Cerelac Wheat 175 grams.png" title="Cerelac">
-<h3>Nestle Cerelac Wheat 175 grams</h3>
-<button> Rs. 350 </button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Baby Feeder.jpeg" title="Feeder">
-<h3>Cuddles Wide Neck Feeder 60ml</h3>
-<button> Rs. 606 </button>
-<button> Add to cart</button></div>
-
-<div class="col-4 text-center">
-<img src="images/Training Cup.jpeg" title="Training Cup">
-<h3>Shield Training Cup</h3>
-<button> Rs. 200 </button>
-<button> Add to cart</button></div>
-
-<div class="col-4 text-center">
-<img src="images/Soother And Teether.jpeg" title="Soother And Teether">
-<h3>Silicone Soother And Teether</h3>
-<button> Rs. 298 </button>
-<button> Add to cart</button>
-<button> Buy now</button>
-</div>  
-</div>
-<br />
-<br />
-</div>
-
-<div class="container-fluid mt-3 px-0 text-center">
-<h1 class="text-center bg-dark text-light">Medicines</h1>
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Disprin.jpeg" title="painkiller">
-<h3>Disprin</h3>
-<button> Rs. 21</button>
-<button> Add to cart</button></div>
-
-<div class="col-4 text-center">
-<img src="images/panadol.jpg" title="painkiller">
-<h3>Panadol </h3>
-<button> Rs. 25</button>
-<button> Add to cart</button></div>
-
-<div class="col-4 text-center">
-<img src="images/Feldene.jpeg" title="joints painkiller">
-<h3>Feldene</h3>
-<button> Rs. 694</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Brufen.jpeg" title="painkiller">
-<h3>Brufen 100Mg/5Ml Suspension 120Ml</h3>
-<button> Rs. 85</button>
-<button> Add to cart</button></div>
-
-<div class="col-4 text-center">
-<img src="images/Febrol.jpeg" title="painkiller"> 
-<h3>Febrol 60 Ml Suspension</h3>
-<button> Rs. 49</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/Calpol.jpeg" title="painkiller">
-<h3>Calpol 500 Mg Tablets</h3>
-<button> Rs. 25</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/amoxil-250mg.jpg" title="antibiotic">
-<h3>Amoxil-250mg Tablets</h3>
-<button> Rs. 225</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/flaygl.jpg" title="painkiller">
-<h2>Flagyl</h2>
-<button> Rs. 30</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/i.metionine.jpg" title="painkiller">
-<h3>l-methionine</h3>
-<button> Rs. 330</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Cefixime.jpg" title="painkiller">
-<h3>Cefixime Tablets 200mg</h3>
-<button> Rs. 200</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/augmenten.jpg" title="antibitoic">
-<h2>Augmentin 375mg tablets</h2>
-<button> Rs. 370</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/wellme10.png" title="painkiller">
-<h2>Wellme</h2>
-<button> Rs. 420</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/entamizole.jpg" title="painkiller">
-<h3>Entamizol 250mg Tablets</h3>
-<button> Rs. 470</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/rigix.jpg" title="allergy tablet">
-<h3>Rigix Tablets 10mg</h3>
-<button> Rs. 470</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/strepsil.jpg" title="painkiller">
-<h3>Strepsils</h3>
-<button> Rs. 420</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-</div>
-
-<div class="container-fluid mt-3 px-0 text-center">
-<h1 class="text-center bg-dark text-light">Nutrition and Supplements</h1>
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Ensure Plus.jpeg" title="Nutritional drinks">
-<h3>Ensure Plus 250Ml </h3>
-<button> Rs. 495</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/seamega capsules.jpg" title="Immunity-boast capsules">
-<h3>Seamega Softgel Capsules</h3>
-<button> Rs. 1045</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/kidzvitz gummies.jpg" title="Immunity-boast gummies">
-<h3>Kidzvitz Gummies</h3>
-<button> Rs. 1150</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br />
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Nf Jointin D Tablets.png" title="Immunity-boast capsules">
-<h3>Nf Jointin D Tablets</h3>
-<button> Rs. 1990</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/Nf Lipozin Tablets.jpeg" title="multivitamin">
-<h3>Nf Lipozin Tablets</h3>
-<button> Rs. 1490</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/folic acid 5mg tablet.jpg" title="Immunity-boast capsules">
-<h3>Folic Acid 5mg tablet</h3>
-<button> Rs. 90</button>
-<button> Add to cart</button>
-</div>
-</div>
-<br />
-<br />
-
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Pediasure.jpg" title="nutritional drink">
-<h3>Pediasure Chocolate 850gm milk powder</h3>
-<button> Rs. 3509</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/suebex.jpg" title="multivitamin">
-<h3>Surbex 60 Tablets</h3>
-<button> Rs. 294</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/cac.jpg" title="nutritional drink">
-<h3>CaC-1000 Plus Tablet Orange</h3>
-<button> Rs. 411</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br/>
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Natures Bounty.jpeg" title="multivitamin">
-<h3>Natures Bounty Zinc 50 Mg Tablets</h3>
-<button> Rs. 3880</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/hairaid soft gel.jpg" title="multivitamin">
-<h3>Hair Aid Softgel Capsules</h3>
-<button> Rs. 1050</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/Bio-Life-Nutri-One-Kids-Grow.png" title="nutritional drink">
-<h3>Bio Life BioNutriOne Kids Grow, 400g</h3>
-<button> Rs. 1100</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br/>
-
-<div class="row">
-<div class="col-4 text-center">
-<img src="images/Gain weight.jpg" title="multivitamin">
-<h3> Vitamin to gain weight</h3>
-<button> Rs. 1100</button>
-<button> Add to cart</button>
-</div>
-
-<div class="col-4 text-center">
-<img src="images/Abbott-Vidaylin-L-Syrup.png" title="syrup">
-<h3>Vidaylin-L 120ml Syrup</h3>
-<button> Rs. 110</button>
-<button> Add to cart</button>
-</div>  
-</div>
-<br />
-<br/>
-</div>
-<footer>
-  <p>&copy; 2023 Medi Hub. All rights reserved.</p>
-  
-</footer>
-
+  <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
-
