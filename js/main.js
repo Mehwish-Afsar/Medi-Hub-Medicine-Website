@@ -140,6 +140,8 @@ function bindAddButtons(container){
 }
 
 /*  Shop page: filter + search  */
+let applyShopFilters = null; // exposed so the nav search can trigger it directly
+
 function initShopGrid(){
   const grid = document.querySelector('[data-product-grid]');
   if (!grid) return;
@@ -149,6 +151,12 @@ function initShopGrid(){
   const search = document.querySelector('[data-shop-search]');
   const countEl = document.querySelector('[data-result-count]');
   let activeCat = 'all';
+
+  // Arriving from the nav search on another page (medicine.html?q=panadol)
+  // pre-fills the box and filters immediately.
+  const params = new URLSearchParams(window.location.search);
+  const initialQuery = params.get('q');
+  if (initialQuery && search) search.value = initialQuery;
 
   function apply(){
     const q = (search?.value || '').trim().toLowerCase();
@@ -171,6 +179,10 @@ function initShopGrid(){
   });
 
   search?.addEventListener('input', apply);
+  applyShopFilters = (term) => {
+    if (search) search.value = term;
+    apply();
+  };
   apply();
 }
 
@@ -182,6 +194,41 @@ function initFeaturedGrid(){
   const featuredIds = ['bw80','jointin','amoxil','ensure','panadol','folic','lac1','kidzvitz'];
   const items = featuredIds.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
   renderGrid(grid, items);
+}
+
+/*  Top nav search — works from any page  */
+function initNavSearch(){
+  const form = document.querySelector('.nav-search');
+  if (!form) return;
+  const input = form.querySelector('input[type="search"]');
+  if (!input) return;
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    runNavSearch(input.value);
+  });
+
+  // Also trigger on the search icon / virtual keyboard "search" action
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter'){
+      e.preventDefault();
+      runNavSearch(input.value);
+    }
+  });
+}
+
+function runNavSearch(rawTerm){
+  const term = rawTerm.trim();
+  if (!term) return;
+
+  if (typeof applyShopFilters === 'function'){
+    // Already on the shop page: filter in place, no reload.
+    applyShopFilters(term);
+    document.querySelector('#shop')?.scrollIntoView({ behavior:'smooth', block:'start' });
+  } else {
+    // Any other page: jump to the shop, pre-filtered.
+    window.location.href = 'medicine.html?q=' + encodeURIComponent(term);
+  }
 }
 
 /*  Nav: mobile toggle  */
@@ -332,6 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initFeaturedGrid();
   initShopGrid();
+  initNavSearch();
   initFAQ();
   initPasswordToggles();
   initPasswordStrength();
@@ -351,4 +399,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initForm('[data-signup-form]', {
     onValid: () => showToast('Account created — welcome to MediHub!')
   });
-});
+})
