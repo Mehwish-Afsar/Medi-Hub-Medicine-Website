@@ -15,8 +15,8 @@ medihub/
 ├── about.html              # About page
 ├── contact.html            # Contact page
 ├── faqs.html               # Frequently Asked Questions
-├── sign-in.html            # Login page
-├── sign-up.html            # Registration page
+├── Sign-in.html            # Login page
+├── Sign-up.html            # Registration page
 │
 ├── css/
 │   └── styles.css          # Global styles
