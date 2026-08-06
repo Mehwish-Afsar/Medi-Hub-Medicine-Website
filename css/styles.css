@@ -34,7 +34,7 @@
   --wrap: 1180px;
 }
 
-/* ---------- Reset ---------- */
+/*  Reset  */
 *,
 *::before,
 *::after {
@@ -138,7 +138,7 @@ p {
   display: inline-block;
 }
 
-/* ---------- Buttons ---------- */
+/*  Buttons  */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -205,7 +205,7 @@ p {
   cursor: not-allowed;
 }
 
-/* ---------- Nav ---------- */
+/*  Nav  */
 .site-header {
   position: sticky;
   top: 0;
@@ -415,7 +415,7 @@ p {
   margin-top: 10px;
 }
 
-/* ---------- Toast / cart ---------- */
+/* cart  */
 .toast {
   position: fixed;
   bottom: 22px;
@@ -449,7 +449,7 @@ p {
   flex-shrink: 0;
 }
 
-/* ---------- Hero ---------- */
+/*  Hero */
 .hero {
   padding: 64px 0 40px;
   position: relative;
@@ -605,7 +605,7 @@ p {
   }
 }
 
-/* ---------- Sections ---------- */
+/*  Sections */
 section {
   padding: 52px 0;
 }
@@ -800,10 +800,6 @@ section {
   border-bottom: 1px dashed var(--line-strong);
 }
 
-/* No object-fit here on purpose: object-fit:contain scales images UP to
-   fill the box, which is what was blurring small source photos. Plain
-   max-width/max-height shrinks large images but never enlarges small
-   ones, so every photo shows at its real resolution or smaller. */
 .product-card .thumb img {
   width: auto;
   height: auto;
@@ -1025,7 +1021,7 @@ section {
   color: var(--muted);
 }
 
-/* ---------- Forms ---------- */
+/*  Forms  */
 .auth-shell {
   min-height: calc(100vh - 200px);
   display: flex;
@@ -1306,7 +1302,7 @@ section {
   }
 }
 
-/* ---------- FAQ ---------- */
+/*  FAQ  */
 .faq-search {
   display: flex;
   align-items: center;
@@ -1393,7 +1389,7 @@ section {
   max-height: 600px;
 }
 
-/* ---------- Footer ---------- */
+/*  Footer  */
 .site-footer {
   background: var(--ink);
   color: #CFE0DA;
