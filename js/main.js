@@ -9,10 +9,10 @@ const PRODUCTS = [
   { id:'jboil', name:"Johnson's Baby Oil 100ml",          cat:'baby',   price:468,  img:"images/johnson baby oil.png" },
   { id:'jbpow', name:"Johnson's Baby Powder 100g",        cat:'baby',   price:272,  img:"images/johnson baby powder.png" },
   { id:'jbgift',name:'Johnson Baby Gift Box',             cat:'baby',   price:3000, img:"images/Johnson Baby Gift Box.png" },
-  { id:'lac1',  name:'Lactogen (1) 200g',                 cat:'baby',   price:504,  img:"images/Lactogen 1.png" },
-  { id:'lac2',  name:'Lactogen 2 200g',                   cat:'baby',   price:500,  img:"images/Lactogen 2.png" },
-  { id:'lac3',  name:'Lactogrow 3 200g',                  cat:'baby',   price:500,  img:"images/Lactogen 3.png" },
-  { id:'lacr',  name:'Lactogen Recover 200g',             cat:'baby',   price:713,  img:"images/Lactogen rec.png" },
+  { id:'lac1',  name:'Lactogen (1) 200g',                 cat:'baby',   price:504,  img:"images/lactogen 1.png" },
+  { id:'lac2',  name:'Lactogen 2 200g',                   cat:'baby',   price:500,  img:"images/lactogen 2.png" },
+  { id:'lac3',  name:'Lactogrow 3 200g',                  cat:'baby',   price:500,  img:"images/lactogen 3.png" },
+  { id:'lacr',  name:'Lactogen Recover 200g',             cat:'baby',   price:713,  img:"images/lactogen rec.png" },
   { id:'bunyad',name:'Nestle Bunyad 260g',                cat:'baby',   price:2550, img:"images/Nestle bunyad.png" },
   { id:'cerelac',name:'Nestle Cerelac 175g',              cat:'baby',   price:340,  img:"images/Nestle Cerelac.png" },
   { id:'cerelacw',name:'Nestle Cerelac Wheat 175g',       cat:'baby',   price:350,  img:"images/Nestle Cerelac wheat.png" },
@@ -35,7 +35,7 @@ const PRODUCTS = [
   { id:'wellme',name:'Wellme',                             cat:'medicine', price:420, img:"images/Well me.png" },
   { id:'enta',  name:'Entamizol 250mg Tablets',            cat:'medicine', price:470, img:"images/Entamizole.png", rx:true },
   { id:'rigix', name:'Rigix Tablets 10mg',                 cat:'medicine', price:470, img:"images/Rigix.png" },
-  { id:'strep', name:'Strepsils',                          cat:'medicine', price:420, img:"images/strepsils.png" },
+  { id:'strep', name:'Strepsils',                          cat:'medicine', price:420, img:"images/Strepsils.png" },
 
   // Nutrition & supplements
   { id:'ensure',name:'Ensure Plus 250ml',                  cat:'nutrition', price:495,  img:"images/Ensure.png" },
@@ -45,11 +45,11 @@ const PRODUCTS = [
   { id:'lipozin',name:'NF Lipozin Tablets',                cat:'nutrition', price:1490, img:"images/Nf Lipozin Tablets.png" },
   { id:'folic', name:'Folic Acid 5mg Tablet',              cat:'nutrition', price:90,   img:"images/Folic Acid.png" },
   { id:'pediasure',name:'Pediasure Chocolate 850g',        cat:'nutrition', price:3509, img:"images/Pediasure.png" },
-  { id:'surbex',name:'Surbex 60 Tablets',                  cat:'nutrition', price:294,  img:"images/surbex.png" },
+  { id:'surbex',name:'Surbex 60 Tablets',                  cat:'nutrition', price:294,  img:"images/Surbex.png" },
   { id:'cac',   name:'CaC-1000 Plus Tablet Orange',        cat:'nutrition', price:411,  img:"images/Cac.png" },
   { id:'zinc',  name:"Nature's Bounty Zinc 50mg Tablets",  cat:'nutrition', price:3880, img:"images/Zinc Immune.png" },
   { id:'kidsgrow',name:'Bio Life NutriOne Kids Grow 400g', cat:'nutrition', price:1100, img:"images/Bio Grow.png" },
-  { id:'gainwt',name:'Vitamin To Gain Weight',              cat:'nutrition', price:1100, img:"images/Gain weight.png" },
+  { id:'gainwt',name:'Vitamin To Gain Weight',              cat:'nutrition', price:1100, img:"images/Gain Weight.png" },
   { id:'vidaylin',name:'Vidaylin-L 120ml Syrup',            cat:'nutrition', price:110,  img:"images/Vidaylin.png" },
 ];
 
